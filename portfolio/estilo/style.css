@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*CABEÇALHO*/
+header {
+    background-color: rgba(19, 19, 253, 0.687);
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+    text-align: center;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+}
+
+/*BODY*/
+body {
+    background-color: rgb(244, 234, 221);
+}
+
+/*PRINCIPAL*/
+main {
+    background-color: rgb(230, 224, 224);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section h3 {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0px;
+}
+/*DIVs*/
+
+.box h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+}
+
+.box picture {
+    display: block;
+}
+
+/*BOTÕES*/
+.box button {
+    background-color: darkgrey;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.box button > a {
+    color: white;
+    font-weight: bolder;
+    font-size: 10;
+    text-decoration: none;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:hover > a {
+    color: black;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(169, 169, 169, 0.754);
+}
+
+footer div {
+    width: 400px;
+}
+
+footer h3 {
+    padding: 10px 0px;
+    font: normal 30px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*PARÁGRAFO DAS REDES SOCIAIS*/
+p.linksocial {
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.linksocial a {
+    color: black;
+    font: bold 15px Arial;
+}
+
+.linksocial > a:hover {
+    color: blue;
+}
+
+/*RODAPÉ FINAL*/
+#final {
+    background-color: darkgray;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
