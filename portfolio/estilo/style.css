@@ -67,7 +67,7 @@ section h3 {
 
 /*BOTÕES*/
 .box button {
-    background-color: darkgrey;
+    background-color: rgb(132, 131, 131);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -97,7 +97,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: end;
-    background-color: rgba(169, 169, 169, 0.754);
+    background-color: rgba(169, 169, 169, 0.601);
 }
 
 footer div {
@@ -126,7 +126,7 @@ p.linksocial {
 
 /*RODAPÉ FINAL*/
 #final {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.401);
     width: 100%;
     padding: 10px 0px;
     text-align: center;
