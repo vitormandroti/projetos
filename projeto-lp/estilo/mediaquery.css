@@ -80,7 +80,7 @@ EXTRA LARGE: min-width: 1200px
     #primeiradobra-flex {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: center;
     }
    
     #segundadobra-flex {
