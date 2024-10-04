@@ -1,0 +1,121 @@
+/*
+MOBILE: max-width: 600px
+TABLET: 601 - 768
+LARGE DEVICES: 769 - 1200
+EXTRA LARGE: min-width: 1200px
+*/
+
+/*TABLET*/
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 2em;
+        max-width: 700px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    /*SEGUNDA DOBRA e TERCEIRA DOBRA*/
+    #segundadobra, #terceiradobra {
+        padding: 10px 20px 30px 20px;
+    }
+
+    #segundadobra h4, #terceiradobra h4 {
+        font-size: 18px;
+    }
+    
+    #segundadobra p, #terceiradobra p {
+        font-size: 17px;
+    }
+
+    /*QUARTA DOBRA*/
+    #quartadobra {
+        padding: 30px 80px 30px 40px;
+    }
+
+    #quartadobra p {
+        font-size: 18px;
+    }
+
+    /*QUINTA DOBRA*/
+    #quintadobra p {
+        font-size: 30px;
+    }
+
+    #sextadobra {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/*LARGE DEVICE*/
+@media screen and (min-width: 992px) {
+    #primeiradobra {
+        padding-top: 40px;
+    }
+
+    #primeiradobra h1, #primeiradobra h2 {
+        width: 550px;
+    }
+
+    /*SEGUNDA e TERCEIRA DOBRA*/
+    #segundadobra, #terceiradobra {
+        padding: 10px 20px 40px 20px;
+    }
+
+    #segundadobra h3, #terceiradobra h3 {
+        margin: 10px 0px 30px 0px;
+        font-size: 2em;
+    }
+
+    #quartadobra {
+        padding: 30px 60px;
+    }
+
+     /*CONFIG. DOS FLEXBOX*/
+    #primeiradobra-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+   
+    #segundadobra-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    #terceiradobra-flex {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+    }
+}
+
+/*EXTRA LARGE DEVICE*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: lightgrey;
+    }
+
+    header, main, footer {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    header {
+        padding: 5px 0px;
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 5px 0px;
+    }
+}
