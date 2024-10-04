@@ -1,0 +1,192 @@
+* {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --cinza-claro: #737275;
+    --cinza-escuro: #4d4643;
+    --laranja-botão: #ce804f;
+    --botão-hover: orange;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*CABEÇALHO*/
+header {
+    display: flex;
+    flex-grow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cinza-claro);
+    /* height: 30px; */
+    font-size: 3.1vw;
+    /* text-align: center; */
+    text-shadow: 0.5px 0.5px 0px rgba(255, 255, 255, 0.699);    
+    padding: 5px;
+}
+
+header img {
+    height: 5vw;
+}
+
+/*TODAS SECTION DA CLASSE CONTAINER*/
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*PRIMEIRA DOBRA*/
+#primeiradobra {
+    background-color: var(--cinza-escuro);
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 5vw;
+    padding: 30px 10px 10px 20px;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.885);
+    font-size: 15px;
+    max-width: 700px;
+    padding: 10px 0px 10px 20px;
+    margin-bottom: 30px;
+}
+
+/*TODOS OS BOTÕES DA PÁGINA*/
+button {
+    display: block;
+    background-color: var(--laranja-botão);
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.343);
+    margin: 15px auto 10px auto;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: var(--botão-hover);
+    cursor: pointer;
+}
+
+button > a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*SEGUNDA DOBRA*/
+#segundadobra {
+    background-color: var(--cinza-claro);
+    padding: 10px 10px 30px 15px;
+}
+
+/*SEGUNDA DOBRA E TERCEIRA DOBRA(CONFIG. IGUAIS)*/
+#segundadobra h3, #terceiradobra h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#segundadobra h4, #terceiradobra h4 {
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.227);
+    padding: 12px 0px 2px 0px;
+}
+
+#segundadobra p, #terceiradobra p {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/*TERCEIRA DOBRA*/
+#terceiradobra {
+    background-color: var(--cinza-escuro);
+    padding: 10px 10px 30px 15px;
+}
+
+/*QUARTA DOBRA*/
+#quartadobra {
+    background-color: var(--cinza-claro);
+    padding: 10px 10px 15px 10px;
+}
+
+#quartadobra h3 {
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+#quartadobra p {
+    padding: 20px 10px 1px 5px;
+}
+
+#quartadobra button {
+    margin: 30px auto 10px auto;
+}
+
+/*QUINTA DOBRA*/
+#quintadobra {
+    background-color: var(--cinza-escuro);
+    padding: 10px 10px 20px 10px;
+}
+
+#quintadobra p {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.358);
+    text-align: center;
+    padding-right: 50px;
+}
+
+p#realprice {
+    font-size: 27px;
+    padding: 1px 0px 20px 14px;
+}
+
+/*SEXTA DOBRA*/
+#sextadobra {
+    background-color: var(--cinza-claro);
+    padding: 30px 0px;
+}
+
+#sextadobra p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.child-sextadobra {
+    text-align: center;
+}
+
+/*RODAPÉ*/
+footer {
+    background-color: var(--cinza-escuro);
+    padding: 5px;
+    height: 20px;
+}
+
+footer img {
+    float: left;
+    height: 20px;
+    padding-left: 10px;
+}
+
+p#seguro {
+    float: left;
+    padding-left: 2px;
+}
+
+p#direitos {
+    float: right;
+    padding-right: 10px;
+}
