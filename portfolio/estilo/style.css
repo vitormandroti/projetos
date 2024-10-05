@@ -15,12 +15,12 @@ header {
 header h1 {
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 header h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     padding: 8px;
 }
@@ -46,7 +46,7 @@ section h3 {
     color: green;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     text-decoration: underline;
     padding: 20px 0px;
@@ -93,20 +93,20 @@ button:hover > a {
 }
 
 /*FOOTER*/
-footer {
+div#footerflex {
     display: flex;
-    flex-direction: column;
-    align-items: end;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     background-color: rgba(169, 169, 169, 0.601);
 }
 
-footer div {
-    width: 400px;
+div#footerflex-child {
+    padding: 10px 20px;
 }
 
-footer h3 {
+div#footerflex-child h3 {
     padding: 10px 0px;
-    font: normal 30px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: normal 25px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*PARÁGRAFO DAS REDES SOCIAIS*/
@@ -127,7 +127,7 @@ p.linksocial {
 /*RODAPÉ FINAL*/
 #final {
     background-color: rgba(169, 169, 169, 0.401);
-    width: 100%;
+    max-width: 1150px;
     padding: 10px 0px;
     text-align: center;
 }
