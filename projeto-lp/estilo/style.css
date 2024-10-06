@@ -12,9 +12,9 @@
     --botão-hover: orange;
 }
 
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 
 /*CABEÇALHO*/
 header {
@@ -50,13 +50,13 @@ header img {
 
 h1 {
     font-weight: normal;
-    font-size: 5vw;
+    font-size: 7vw;
     padding: 30px 10px 10px 20px;
 }
 
 h2 {
     color: rgba(255, 255, 255, 0.885);
-    font-size: 15px;
+    font-size: 13px;
     max-width: 700px;
     padding: 10px 0px 10px 20px;
     margin-bottom: 30px;
@@ -140,6 +140,10 @@ button > a {
     padding: 10px 10px 20px 10px;
 }
 
+#quintadobra img {
+    max-width: 100%;
+}
+
 #quintadobra p {
     font-size: 20px;
     font-weight: bold;
@@ -170,23 +174,24 @@ p#realprice {
 
 /*RODAPÉ*/
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--cinza-escuro);
     padding: 5px;
-    height: 20px;
 }
 
 footer img {
-    float: left;
     height: 20px;
-    padding-left: 10px;
 }
 
-p#seguro {
-    float: left;
-    padding-left: 2px;
+#divfooter-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 2px 0px 10px;
 }
 
-p#direitos {
-    float: right;
-    padding-right: 10px;
+#divfooter-2 {
+    padding: 0px 2px 0px 14px;
 }
