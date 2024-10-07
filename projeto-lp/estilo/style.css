@@ -35,11 +35,16 @@ header img {
     height: 5vw;
 }
 
-/*TODAS SECTION DA CLASSE CONTAINER*/
+/*TODAS AS DIVs DA CLASSE CONTAINER*/
 .container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+/*IMAGENS DE TODAS AS SECTIONs*/
+section img {
+    max-width: 100%;
 }
 
 /*PRIMEIRA DOBRA*/

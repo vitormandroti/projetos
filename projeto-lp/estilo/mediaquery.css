@@ -17,6 +17,7 @@ EXTRA LARGE: min-width: 1200px
         font-weight: normal;
     }
 
+
     /*SEGUNDA DOBRA e TERCEIRA DOBRA*/
     #segundadobra, #terceiradobra {
         padding: 10px 20px 30px 20px;
@@ -103,7 +104,7 @@ EXTRA LARGE: min-width: 1200px
     }
 
     header, main, footer {
-        max-width: 1200px;
+        max-width: 1250px;
         margin: 0px auto;
     }
 
