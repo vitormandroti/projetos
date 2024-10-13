@@ -6,27 +6,39 @@
     <meta name="description" content="Design de interiores do clássico ao moderno! Aqui na Espaços Elegantes você faz um orçamento sem compromisso algum e terá um trabalho feito por especialistas certificados.">
     <title>Espaços Elegantes</title>
     <link rel="shortcut icon" href="icons/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
 </head>
-<body>
+
+<body onresize="tamanho()">
     <header>
         <h1>Espaços Elegantes</h1>
-        <nav>
-            <p><a href="http://">Serviços feitos</a></p>
-            <p><a href="http://">Sobre nós</a></p>
-            <p><a href="http://">Contato</a></p>
+        <span id="menu-icon" onclick="cliquemenu()">
+            <img src="icons/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Icone que quando clicado aparece o menu de navegação">
+        </span>
+        <nav id="menu">
+            <div id="container-menu">
+                <p><a href="#servicos-feitos">Serviços feitos</a></p>
+                <p><a href="http://">Sobre nós</a></p>
+                <p><a href="http://">Contato</a></p>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="primeiradobra">
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" name="nome" id="name"><br>
-                <label for="phone">Telefone:</label>
-                <input type="tel" name="telefone" id="phone"><br>
-                <label for="text">Conte um pouco mais sobre o que você precisa:</label>
-                <input type="text" name="texto" id="text"><br>
-            </form>
+            <div id="formulario">
+                <p>Faça seu orçamento sem compromisso</p>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" id="name" placeholder="Nome e um Sobrenome"><br>
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" name="telefone" id="phone" placeholder="(00) 00000-0000"><br>
+                    <label for="text">Conte um pouco mais sobre o que você precisa:</label>
+                    <input type="text" name="texto" id="text" placeholder="Fique a vontade"><br>
+                </form>
+                <button type="submit">Enviar</button>
+            </div>
         </section>
 
         <section id="segundadobra" class="container">
@@ -56,7 +68,7 @@
         </section>
 
         <section id="terceiradobra" class="container">
-            <h2>O que já fizemos?</h2>
+            <h2 id="servicos-feitos">O que já fizemos?</h2>
 
             <div class="child">
                 <img src="imagens/projeto-1.png" alt="Imagem de um ambiente decorado pela Espaços Elegantes, em um estilo moderno">
@@ -151,5 +163,25 @@
             <p>&copy;Todos Direitos Reservados</p>
         </div>
     </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+
+        function cliquemenu() {
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        function tamanho() {
+            if (window.innerWidth >= 601) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

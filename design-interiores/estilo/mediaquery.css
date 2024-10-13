@@ -1,0 +1,27 @@
+@media screen and (min-width: 601px) {
+    :root {
+        --principal: #002147;
+        --secundaria: #FFD700;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #container-menu {
+        background-color: var(--principal);
+        height: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #menu a:hover {
+        color: darkgray;
+    }
+}
