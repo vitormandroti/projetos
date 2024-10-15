@@ -27,7 +27,7 @@
 
     <main>
         <section id="primeiradobra" class="container">
-            <div id="formulario">
+            <div class="formulario">
                 <p>Faça seu orçamento sem compromisso</p>
                 <form>
                     <label for="name">Nome:</label>
@@ -69,7 +69,7 @@
         </section>
 
         <section id="terceiradobra" class="container">
-            <h2 id="servicos-feitos">O que já fizemos?</h2>
+            <h2 id="servicos-feitos">O que já Fizemos?</h2>
 
             <div class="child">
                 <img src="imagens/projeto-1.png" alt="Imagem de um ambiente decorado pela Espaços Elegantes, em um estilo moderno">
@@ -110,12 +110,15 @@
         <section id="quintadobra">
             <h2>O que falam sobre nós?</h2>
             <div class="box">
+                <h3>Gustavo Henrique</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem voluptates? Necessitatibus placeat id esse. Assumenda, nemo eum ipsa quaerat quae exercitationem tenetur error vero suscipit porro sequi eos odio.</p>
             </div>
             <div class="box">
+                <h3>Letícia Silva</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem voluptates? Necessitatibus placeat id esse. Assumenda, nemo eum ipsa quaerat quae exercitationem tenetur error vero suscipit porro sequi eos odio.</p>
             </div>
             <div class="box">
+                <h3>Gabriel Ferreira</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem voluptates? Necessitatibus placeat id esse. Assumenda, nemo eum ipsa quaerat quae exercitationem tenetur error vero suscipit porro sequi eos odio.</p>
             </div>
         </section>
@@ -133,21 +136,28 @@
         </section>
 
         <section id="sobrenos">
-            <h2>Sobre Nós</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo neque provident expedita commodi nobis, dolores similique laudantium tempora beatae obcaecati laboriosam repellendus eos asperiores! Architecto similique quas ipsum nemo. Illum?</p><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo neque provident expedita commodi nobis, dolores similique laudantium tempora beatae obcaecati laboriosam repellendus eos asperiores! Architecto similique quas ipsum nemo. Illum?</p>
+            <div>
+                <h2>Sobre Nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo neque provident expedita commodi nobis, dolores similique laudantium tempora beatae obcaecati laboriosam repellendus eos asperiores! Architecto similique quas ipsum nemo. Illum?</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo neque provident expedita commodi nobis, dolores similique laudantium tempora beatae obcaecati laboriosam repellendus eos asperiores! Architecto similique quas ipsum nemo. Illum?</p><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vitae tenetur, quos voluptate voluptatem accusamus ratione modi enim eos esse perferendis, porro odio placeat asperiores quas voluptates fuga corporis nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem cum eaque necessitatibus minima itaque reprehenderit nulla expedita perspiciatis placeat! Dicta inventore error ut recusandae nemo accusamus laborum unde voluptate!</p>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>Orçamento</h2>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" name="nome" id="name"><br>
-                <label for="phone">Telefone:</label>
-                <input type="tel" name="telefone" id="phone"><br>
-                <label for="text">Conte um pouco mais sobre o que você precisa:</label>
-                <input type="text" name="texto" id="text"><br>
-            </form>
+        <section id="orcamento">
+            <h2>Bora fazer um Orçamento?</h2>
+            <div class="formulario">
+                <p>Basta preencher os dados</p>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" id="name" placeholder="Nome e um Sobrenome"><br>
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" name="telefone" id="phone" placeholder="(00) 00000-0000" maxlength="11"><br>
+                    <label for="text">Conte um pouco mais sobre o que você precisa:</label>
+                    <textarea name="textarea" id="text" placeholder="Fique a vontade" style="resize: none;" maxlength="240"></textarea>
+                </form>
+                <button type="submit"><a href="#">Enviar</a></button>
+            </div>
         </section>
     </main>
 
@@ -161,7 +171,7 @@
         </div>
 
         <div class="footerbox">
-            <p>&copy;Todos Direitos Reservados</p>
+            <p id="copy">&copy;Todos Direitos Reservados</p>
         </div>
     </footer>
 

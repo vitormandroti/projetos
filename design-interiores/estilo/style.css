@@ -10,6 +10,8 @@
 :root {
     --principal: #002147;
     --secundaria: #FFD700;
+    --fundo: #333333;
+    --titulos-font: bold 25px 'Montserrat', serif;
 }
 
 /*CABEÇALHO*/
@@ -61,7 +63,7 @@ header img {
 }
 
 /*FORMULÁRIO DA PRIMEIRA DOBRA*/
-section #formulario {
+section .formulario {
     background-color: var(--secundaria);
     max-width: 350px;
     height: 408px;
@@ -69,7 +71,7 @@ section #formulario {
     margin: 0px 10px;
 }
 
-#formulario p {
+.formulario p {
     background-color: var(--principal);
     color: white;
     font-weight: bold;
@@ -78,11 +80,11 @@ section #formulario {
     padding: 10px;
 }
 
-#formulario form {
+.formulario form {
     padding: 10px;
 }
 
-#formulario input, #formulario textarea {
+.formulario input, .formulario textarea {
     height: 30px;
     width: 95%;
     margin: 2px 0px 20px 0px;
@@ -104,7 +106,7 @@ button {
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: var(--fundo);
 }
 
 button a {
@@ -116,7 +118,7 @@ button a {
 
 /*SEGUNDA DOBRA*/
 #segundadobra h2 {
-    font-size: 25px;
+    font: var(--titulos-font);
     padding: 15px 0px 15px 5px;
     margin-bottom: 30px;
 }
@@ -141,6 +143,114 @@ div.child > p {
 
 /*TERCEIRA DOBRA*/
 #terceiradobra {
-    background-color: #333333;
+    background-color: var(--fundo);
 }
 
+#terceiradobra h2 {
+    font: var(--titulos-font);
+    color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#terceiradobra p {
+    color: white;
+    margin-bottom: 25px;
+}
+
+/*QUARTADOBRA*/
+#quartadobra {
+    background-color: whitesmoke;
+}
+
+#quartadobra h2 {
+    font: var(--titulos-font);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/*QUINTA DOBRA*/
+#quintadobra {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.box {
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+/*SEXTA DOBRA*/
+#sextadobra {
+    display: none;
+}
+
+/*SOBRE a EMPRESA*/
+#sobrenos {
+    background-image: url(../imagens/imagem-sobrenos.png);
+    background-attachment: fixed;
+    background-position: left bottom;
+    padding: 10px;
+}
+
+#sobrenos div {
+    background-color: rgba(255, 255, 255, 0.607);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#sobrenos h2 {
+    font-size: 2em;
+}
+
+#sobrenos p {
+    margin: 10px 0px;
+}
+
+/*SECTION FINAL COM FORMULÁRIO*/
+#orcamento {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#orcamento h2{
+    font: var(--titulos-font);
+    text-align: center;
+    padding: 20px 2px 10px 2px;
+}
+
+/*RODAPÉ*/
+footer {
+    margin-top: 20px;
+    background-color: var(--fundo);
+}
+
+footer h3 {
+    font: var(--titulos-font);
+    padding: 10px;
+}
+
+footer h3, footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--secundaria);
+}
+
+footer p#copy {
+    background-color: #4c4b4b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
