@@ -250,6 +250,10 @@ footer h3 {
     padding: 10px;
 }
 
+footer p {
+    padding: 7px;
+}
+
 footer h3, footer a {
     color: white;
     text-decoration: none;
