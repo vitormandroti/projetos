@@ -11,7 +11,7 @@
     --principal: #002147;
     --secundaria: #FFD700;
     --fundo: #333333;
-    --titulos-font: bold 25px 'Montserrat', serif;
+    --titulos-font: bold 27px 'Montserrat', serif;
 }
 
 /*CABEÇALHO*/
@@ -136,6 +136,7 @@ p.step-numbers {
 }
 
 div.child > p {
+    max-width: 500px;
     text-align: justify;
     padding: 20px;
     margin-bottom: 30px;
@@ -156,6 +157,7 @@ div.child > p {
 #terceiradobra p {
     color: white;
     margin-bottom: 25px;
+    max-width: 500px;
 }
 
 /*QUARTADOBRA*/
@@ -169,6 +171,10 @@ div.child > p {
     margin-bottom: 10px;
 }
 
+#quartadobra p {
+    max-width: 500px;
+}
+
 /*QUINTA DOBRA*/
 #quintadobra {
     display: flex;
@@ -177,6 +183,10 @@ div.child > p {
     align-items: center;
 
     padding: 10px;
+}
+
+#quintadobra h2 {
+    font: var(--titulos-font);
 }
 
 .box {
@@ -223,6 +233,10 @@ div.child > p {
     font: var(--titulos-font);
     text-align: center;
     padding: 20px 2px 10px 2px;
+}
+
+div#imagem-formulario-final img {
+    display: none;
 }
 
 /*RODAPÉ*/
