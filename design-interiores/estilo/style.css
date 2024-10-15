@@ -41,23 +41,32 @@ header img {
     padding: 0px 15px;
 }
 
-/*PRIMEIRADOBRA + FORMULÁRIO*/
-#primeiradobra {
-    background-image: url(../imagens/imagem-primeiradobra.png);
-    background-attachment: fixed;
-    height: 500px;
-
+/*TODAS AS SECTIONs DA CLASSE CONTAINER*/
+.container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
+.child {
+    text-align: center;
+}
+
+/*PRIMEIRADOBRA*/
+#primeiradobra {
+    background-image: url(../imagens/imagem-primeiradobra.png);
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/*FORMULÁRIO DA PRIMEIRA DOBRA*/
 section #formulario {
     background-color: var(--secundaria);
-    width: 350px;
-    height: 400px;
+    max-width: 350px;
+    height: 408px;
     border-radius: 10px;
+    margin: 0px 10px;
 }
 
 #formulario p {
@@ -73,10 +82,65 @@ section #formulario {
     padding: 10px;
 }
 
-#formulario input {
+#formulario input, #formulario textarea {
     height: 30px;
     width: 95%;
     margin: 2px 0px 20px 0px;
     padding: 5px;
+}
+
+form #text {
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+button {
+    background-color: var(--principal);
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 6px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+button a {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*SEGUNDA DOBRA*/
+#segundadobra h2 {
+    font-size: 25px;
+    padding: 15px 0px 15px 5px;
+    margin-bottom: 30px;
+}
+
+p.step-numbers {
+    background-color: var(--secundaria);
+    color: var(--principal);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    border-radius: 35px;
+}
+
+div.child > p {
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/*TERCEIRA DOBRA*/
+#terceiradobra {
+    background-color: #333333;
 }
 
