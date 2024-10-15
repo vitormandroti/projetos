@@ -43,7 +43,7 @@ header img {
     padding: 0px 15px;
 }
 
-/*TODAS AS SECTIONs DA CLASSE CONTAINER*/
+/*TODAS AS DIVs DA CLASSE CONTAINER*/
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -52,6 +52,10 @@ header img {
 }
 
 .child {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -176,7 +180,7 @@ div.child > p {
 }
 
 /*QUINTA DOBRA*/
-#quintadobra {
+div.provas-sociais {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -187,6 +191,7 @@ div.child > p {
 
 #quintadobra h2 {
     font: var(--titulos-font);
+    padding: 15px 2px;
 }
 
 .box {
@@ -209,13 +214,14 @@ div.child > p {
 }
 
 #sobrenos div {
-    background-color: rgba(255, 255, 255, 0.607);
+    background-color: rgba(255, 255, 255, 0.711);
     padding: 5px;
     border-radius: 8px;
 }
 
 #sobrenos h2 {
     font-size: 2em;
+    text-align: start;
 }
 
 #sobrenos p {

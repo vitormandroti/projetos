@@ -25,3 +25,37 @@
         color: darkgray;
     }
 }
+
+/*COMPUTADOR*/
+@media screen and (min-width: 992px) {
+    div.container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #terceiradobra p, #quartadobra p {
+        width: 400px;
+    }
+
+    div.provas-sociais {
+        flex-flow: row wrap;
+    }
+
+    #sextadobra {
+        display: block;
+    }
+    
+    .box {
+        width: 290px;
+    }
+
+    #sobrenos {
+        height: 400px;
+    }
+
+    #sobrenos div {
+        width: 800px;
+    }
+}
