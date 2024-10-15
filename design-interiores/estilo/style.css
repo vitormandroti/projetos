@@ -70,7 +70,7 @@ h2 {
 section .formulario {
     background-color: var(--secundaria);
     max-width: 350px;
-    height: 400px;
+    height: 390px;
     border-radius: 10px;
     margin: 0px 10px;
 }
