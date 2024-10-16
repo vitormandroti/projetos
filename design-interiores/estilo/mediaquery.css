@@ -23,11 +23,16 @@
 
     #menu a:hover {
         color: darkgray;
+        cursor: pointer;
     }
 }
 
 /*COMPUTADOR*/
 @media screen and (min-width: 992px) {
+    :root {
+        --titulos-font: bold 40px 'Montserrat', serif;
+    }
+
     body {
         background-color: wheat;
     }
@@ -37,9 +42,23 @@
         margin: 0px auto;
     }
 
+    h2 {
+        font: var(--titulos-font);
+    }
+
+    p {
+        font-size: 18px;
+    }
+
     /*TODAS AS SECTIONs de FUNDO BRANCO*/
     #segundadobra, #quintadobra, #sextadobra, #orcamento {
         background-color: white;
+    }
+
+    section.container {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     /*TODAS AS SECTIONs CONTAINER*/
@@ -47,11 +66,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        align-items: flex-start;
+        align-items: center;
+        gap: 15px;
     }
 
     #terceiradobra, #quartadobra, #quintadobra, #sextadobra {
-        padding: 50px;
+        padding: 20px 50px;
     }
 
     /*PARÁGRAFO DAS TERCEIRA E QUARTA DOBRA*/
@@ -75,11 +95,13 @@
     }
 
     /*SECTION DA SEÇÃO 'SOBRE NÓS'*/
-    #sobrenos {
-        height: 400px;
+    #sobrenos div {
+        width: 900px;
     }
 
-    #sobrenos div {
-        width: 800px;
+    /*FORMULÁRIO FINAL*/
+    #orcamento {
+        background-color: #f5f5f5;
+        padding-bottom: 50px;
     }
 }
