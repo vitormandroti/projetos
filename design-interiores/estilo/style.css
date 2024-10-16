@@ -36,6 +36,10 @@ header img {
     background-color: lightslategray;
 }
 
+#container-menu p {
+    padding: 8px 5px;
+}
+
 #menu a {
     color: white;
     text-decoration: none;
@@ -240,6 +244,7 @@ div.provas-sociais {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 #orcamento h2{
