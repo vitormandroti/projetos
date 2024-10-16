@@ -28,6 +28,21 @@
 
 /*COMPUTADOR*/
 @media screen and (min-width: 992px) {
+    body {
+        background-color: wheat;
+    }
+
+    header, main, footer {
+        max-width: 1500px;
+        margin: 0px auto;
+    }
+
+    /*TODAS AS SECTIONs de FUNDO BRANCO*/
+    #segundadobra, #quintadobra, #sextadobra, #orcamento {
+        background-color: white;
+    }
+
+    /*TODAS AS SECTIONs CONTAINER*/
     div.container {
         display: flex;
         flex-flow: row wrap;
@@ -35,22 +50,31 @@
         align-items: flex-start;
     }
 
+    #terceiradobra, #quartadobra, #quintadobra, #sextadobra {
+        padding: 50px;
+    }
+
+    /*PARÁGRAFO DAS TERCEIRA E QUARTA DOBRA*/
     #terceiradobra p, #quartadobra p {
         width: 400px;
     }
 
-    div.provas-sociais {
-        flex-flow: row wrap;
-    }
-
+    /*APARECER SEXTA DOBRA*/
     #sextadobra {
         display: block;
     }
+
+    /*PAI DAS QUINTA E SEXTA DOBRA*/
+    div.provas-sociais {
+        flex-flow: row wrap;
+    }
     
+    /*FILHOS*/
     .box {
         width: 290px;
     }
 
+    /*SECTION DA SEÇÃO 'SOBRE NÓS'*/
     #sobrenos {
         height: 400px;
     }

@@ -127,6 +127,13 @@ button a {
     margin-bottom: 30px;
 }
 
+#segundadobra .child {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 p.step-numbers {
     background-color: var(--secundaria);
     color: var(--principal);
@@ -139,7 +146,7 @@ p.step-numbers {
     border-radius: 35px;
 }
 
-div.child > p {
+div.child > p.normal {
     max-width: 500px;
     text-align: justify;
     padding: 20px;
