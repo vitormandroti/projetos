@@ -51,8 +51,8 @@ section h3 {
     text-decoration: underline;
     padding: 20px 0px;
 }
-/*DIVs*/
 
+/*DIVs*/
 .box h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
@@ -84,11 +84,11 @@ section h3 {
 }
 
 button:hover {
-    background-color: lightgray;
+    background-color: rgba(19, 19, 253, 0.687);
+    cursor: pointer;
 }
 
 button:hover > a {
-    color: black;
     text-decoration: underline;
 }
 
